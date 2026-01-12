@@ -1,0 +1,1 @@
+# sdd-hw1-sw-quality-attributes-template
