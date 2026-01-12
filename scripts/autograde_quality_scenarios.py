@@ -59,4 +59,10 @@ response_match = re.search(r"\*\*Response\*\*:\s*(.+)", content)
 if response_match and re.search(r"\d", response_match.group(1)):
     score += 5
 
-print(f"✅ Auto-grading score: {score}/{MAX_SCORE}")
+PASSING_SCORE = 25
+
+print(f"Score: {score}/{MAX_SCORE}")
+
+if score < PASSING_SCORE:
+    exit(1)
+
